@@ -1,0 +1,14 @@
+{
+  "name": "campus_reportes",
+  "version": "1.0.0",
+  "description": "Patrón Adapter (cajas de cambios) y reportes HTML del campus",
+  "license": "ISC",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "mysql2": "^3.24.4"
+  }
+}
