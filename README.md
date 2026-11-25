@@ -1,6 +1,11 @@
-# REVIEW
+# 🏫 Sistema Campus · Node.js + MySQL
 
-Proyecto Node.js (ES modules) con `mysql2`.
+Aplicación de consola en **Node.js** (ES modules) conectada a **MySQL** con `mysql2`. Tiene dos módulos:
+
+- **Carro con patrón Adapter:** una caja de cambios manual y una automática con interfaces distintas, adaptadas a una misma interfaz que usa el carro.
+- **Reportes HTML del campus:** consulta la base de datos y genera páginas HTML con estudiantes, profesores, horarios y temas por curso.
+
+**Temas:** patrón de diseño Adapter · repositorios · consultas SQL · generación de reportes HTML
 
 ## Ejecutar
 1. `npm install`
