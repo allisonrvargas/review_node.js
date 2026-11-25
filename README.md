@@ -1,5 +1,8 @@
 # 🏫 Sistema Campus · Node.js + MySQL
 
+[![CI](https://github.com/allisonrvargas/review_node.js/actions/workflows/ci.yml/badge.svg)](https://github.com/allisonrvargas/review_node.js/actions/workflows/ci.yml)
+[![Licencia: MIT](https://img.shields.io/badge/licencia-MIT-green.svg)](LICENSE)
+
 Aplicación de consola en **Node.js** (ES modules) conectada a **MySQL** con `mysql2`. Tiene dos módulos:
 
 - **Carro con patrón Adapter:** una caja de cambios manual y una automática con interfaces distintas, adaptadas a una misma interfaz que usa el carro.
@@ -14,6 +17,13 @@ Aplicación de consola en **Node.js** (ES modules) conectada a **MySQL** con `my
    (`DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`).
 4. `npm start`
 
+## Pruebas
+
+```bash
+npm test
+```n
+Cubren el patrón Adapter (las dos cajas de cambios, sus límites y el carro) y el generador de reportes HTML (escapado de datos, filas vacías y formatos). No necesitan base de datos.
+
 ## Estructura
 ```
 app.js                               menú principal
@@ -26,6 +36,7 @@ src/patterns/adapter/
     carro.js                         CLIENTE
 src/repositories/campusRepository.js consultas SQL
 src/reports/                         generación de HTML
+test/                                pruebas con node:test
 reportes/                            aquí se guardan los .html generados
 ```
 
